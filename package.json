@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node loadesm.js"
+    "start": "node loadesm.js",
+    "pretest": "eslint --ignore-path .gitignore ."
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,9 @@
     "redis": "^2.8.0",
     "sequelize": "^5.10.0",
     "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-strongloop": "^2.1.0"
   }
 }
